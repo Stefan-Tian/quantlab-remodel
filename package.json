@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@zeit/next-sass": "^0.2.0",
