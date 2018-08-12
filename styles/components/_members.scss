@@ -5,6 +5,11 @@
   color: $color-blue;
   font-size: 1.2rem;
 
+  &__head {
+    @include head;
+    z-index: 2;
+  }
+
   &__image {
     width: 22rem;
     height: 14rem;
@@ -59,7 +64,7 @@
     display: grid;
     grid-template-columns: 2fr 7fr;
     box-shadow: 0rem 2rem 20rem 3rem rgba($color-blue, 0.7);
-    padding: 1rem 3rem 0rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;

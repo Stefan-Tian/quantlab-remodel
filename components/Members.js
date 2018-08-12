@@ -58,6 +58,7 @@ const Members = () => {
   return (
     <div className="members">
       <Particles className="particles" params={particlesOptions} />
+      <h3 className="members__head">members</h3>
       <div className="members__prof">
         <div className="members__image--container">
           <img
