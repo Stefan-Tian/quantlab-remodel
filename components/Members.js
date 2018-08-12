@@ -56,7 +56,7 @@ const Members = () => {
   ];
 
   return (
-    <div className="members">
+    <div className="members" id="members">
       <Particles className="particles" params={particlesOptions} />
       <h3 className="members__head">members</h3>
       <div className="members__prof">

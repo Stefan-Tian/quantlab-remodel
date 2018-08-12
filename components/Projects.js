@@ -1,7 +1,7 @@
 import React from "react";
 
 const Projects = () => (
-  <div className="projects">
+  <div className="projects" id="projects">
     <h3 className="projects__head">Ongoing Projects</h3>
     <div className="projects__container">
       <div>

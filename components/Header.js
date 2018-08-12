@@ -6,13 +6,13 @@ const Header = () => (
     <Link href="/">
       <a className="header__main">PQML</a>
     </Link>
-    <Link href="/members">
+    <Link href="#members">
       <a className="header__members">members</a>
     </Link>
-    <Link href="/news">
+    <Link href="#news">
       <a className="header__news">news</a>
     </Link>
-    <Link href="/projects">
+    <Link href="#projects">
       <a className="header__projects">projects</a>
     </Link>
     <Link href="/tutorials">

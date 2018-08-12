@@ -23,7 +23,7 @@ const News = () => {
   ];
 
   return (
-    <div className="news">
+    <div className="news" id="news">
       <h3 className="news__head">News</h3>
       <div className="news__content">
         {newsInfos.map(news => (
