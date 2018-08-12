@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  z-index: 1;
+  height: 50rem;
+  overflow: hidden;
+  // margin-top: -5rem;
+  // padding-top: 5rem;
+
+  &__text {
+    //height: 15rem;
+    margin: 0.01rem;
+    background-color: black;
+    padding: 1rem 2rem;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 50%;
+    transform: translate3d(50%, -60%, 100rem);
+    color: $color-blue-light;
+    font-size: 3.5rem;
+    -webkit-transform: translate3d(50%, -60%, 100rem);
+    -moz-transform: translate3d(50%, -60%, 100rem);
+    -ms-transform: translate3d(50%, -60%, 100rem);
+    -o-transform: translate3d(50%, -60%, 100rem);
+  }
+
+  &__particle {
+    position: absolute;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@for $i from 1 through 200 {
+  @keyframes particle-animation-#{$i} {
+    100% {
+      transform: translate3d(
+        (random(90) * 1vw),
+        (random(90) * 1vh),
+        (random(100) * 1px)
+      );
+    }
+  }
+
+  .banner__particle:nth-child(#{$i}) {
+    animation: particle-animation-#{$i} 20s infinite;
+    $size: random(10) + 5 + px;
+    opacity: random(100) / 100;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * 0.1s;
+    transform: translate3d(
+      (random(90) * 1vw),
+      (random(90) * 1vh),
+      (random(100) * 1px)
+    );
+    background: $color-blue-dark;
+  }
+}

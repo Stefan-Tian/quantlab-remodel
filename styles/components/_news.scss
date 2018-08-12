@@ -1,0 +1,48 @@
+.news {
+  background-color: $color-blue-dark;
+  display: flex;
+  padding: 4rem 3rem;
+  flex-direction: column;
+
+  &__head {
+    @include head;
+    color: #fff;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      height: 30rem;
+      position: relative;
+
+      & > h5 {
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        top: 2rem;
+        left: -1.4rem;
+      }
+
+      // & > img {
+      //   width: 30rem;
+      //   height: 30rem;
+
+      //   background-image: linear-gradient(
+      //       to top right,
+      //       rgba($color-green-dark, 0.8),
+      //       rgba($color-green, 0.8)
+      //     ),
+      //     url("https://images.pexels.com/photos/401683/pexels-photo-401683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      //   background-size: cover;
+      //   background-blend-mode: screen;
+      // }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.publications {
+  // background-color: rgba($color-blue-light, 0.4);
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+  &__head {
+    @include head;
+    color: $color-blue-dark;
+  }
+
+  &__articles {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+
+    & > div {
+      background: linear-gradient(
+        to top left,
+        $color-blue-dark,
+        $color-blue 60%
+      );
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      padding: 2rem;
+      box-shadow: 0rem 1.2rem 2rem 0rem rgba($color-blue-dark, 0.7);
+    }
+
+    & > div > svg {
+      margin-top: -4rem;
+      fill: $color-grey;
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    & > div > h3 {
+      font-size: 2rem;
+      margin-bottom: auto;
+    }
+  }
+}
