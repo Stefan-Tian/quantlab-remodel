@@ -58,7 +58,8 @@
 
         & > h4 {
           padding: 0.5rem 1.3rem;
-          background-color: rgba(24, 182, 121, 0.9);
+          background: linear-gradient(to bottom right, white 50%, $color-grey);
+          color: black;
           right: -5rem;
           left: 5rem;
           top: 3rem;
@@ -85,9 +86,9 @@
         -o-transform: perspective(27rem) rotateY(-7deg);
 
         & > h4 {
-          color: white;
+          color: black;
           padding: 0.5rem 1.3rem;
-          background-color: rgba(70, 33, 88, 0.9);
+          background: linear-gradient(to top left, white 70%, $color-grey);
           left: -5rem;
           top: 3rem;
           right: 5rem;
