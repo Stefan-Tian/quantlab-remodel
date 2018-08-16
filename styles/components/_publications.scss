@@ -8,12 +8,22 @@
   &__head {
     @include head;
     color: $color-blue-dark;
+
+    @media only screen and (max-width: $s-screen) {
+      margin: auto;
+      font-size: 3.8rem;
+      margin-top: 3rem;
+    }
   }
 
   &__articles {
     display: flex;
     justify-content: space-evenly;
     margin: 4rem 0;
+
+    @media only screen and (max-width: $s-screen) {
+      flex-direction: column;
+    }
 
     & > div {
       background: linear-gradient(
@@ -26,6 +36,12 @@
       width: 30rem;
       padding: 2rem;
       box-shadow: 0rem 1.2rem 2rem 0rem rgba($color-blue-dark, 0.7);
+
+      @media only screen and (max-width: $s-screen) {
+        width: 50rem;
+        margin: 3rem auto;
+        padding: 2rem 4rem 4rem 4rem;
+      }
     }
 
     & > div > svg {
@@ -39,6 +55,17 @@
     & > div > h3 {
       font-size: 2rem;
       margin-bottom: auto;
+
+      @media only screen and (max-width: $s-screen) {
+        font-size: 3rem;
+      }
+    }
+
+    & > div > span {
+      @media only screen and (max-width: $s-screen) {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
     }
   }
 }

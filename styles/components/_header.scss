@@ -40,5 +40,15 @@
     &:hover {
       font-size: 2.2rem;
     }
+
+    @media only screen and (max-width: $m-screen) {
+      visibility: hidden;
+    }
+  }
+
+  & > a:nth-of-type(5) {
+    @media only screen and (max-width: $m-screen) {
+      visibility: visible;
+    }
   }
 }

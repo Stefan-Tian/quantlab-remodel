@@ -3,6 +3,11 @@
   display: flex;
   padding: 4rem 3rem;
   flex-direction: column;
+  overflow: scroll;
+
+  @media only screen and (max-width: $s-screen) {
+    height: 150%;
+  }
 
   &__head {
     @include head;
@@ -15,12 +20,27 @@
     justify-content: space-between;
     padding: 2rem;
 
+    @media only screen and (max-width: $s-screen) {
+      width: 200%;
+    }
+
     & > div {
       display: flex;
       flex-direction: column;
       width: 30rem;
       height: 30rem;
       position: relative;
+
+      @media only screen and (max-width: $m-screen) {
+        width: 25rem;
+      }
+
+      @media only screen and (max-width: $s-screen) {
+        width: 60rem;
+        height: 40rem;
+        margin-right: 3rem;
+        min-width: 0;
+      }
 
       & > h5 {
         position: absolute;
@@ -29,20 +49,10 @@
         top: 2rem;
         left: -1.4rem;
       }
+    }
 
-      // & > img {
-      //   width: 30rem;
-      //   height: 30rem;
-
-      //   background-image: linear-gradient(
-      //       to top right,
-      //       rgba($color-green-dark, 0.8),
-      //       rgba($color-green, 0.8)
-      //     ),
-      //     url("https://images.pexels.com/photos/401683/pexels-photo-401683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-      //   background-size: cover;
-      //   background-blend-mode: screen;
-      // }
+    @media only screen and (max-width: $s-screen) {
+      min-width: 0;
     }
   }
 }
