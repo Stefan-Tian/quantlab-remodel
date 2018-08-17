@@ -12,6 +12,11 @@
   &__head {
     @include head;
     color: #fff;
+
+    @media only screen and (max-width: $s-screen) {
+      position: sticky;
+      left: 9rem;
+    }
   }
 
   &__content {
