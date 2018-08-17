@@ -14,6 +14,7 @@
     color: #fff;
 
     @media only screen and (max-width: $s-screen) {
+      position: -webkit-sticky;
       position: sticky;
       left: 9rem;
     }
