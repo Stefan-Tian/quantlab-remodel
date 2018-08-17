@@ -43,12 +43,20 @@
 
     @media only screen and (max-width: $m-screen) {
       visibility: hidden;
+      font-size: 0;
     }
   }
 
   & > a:nth-of-type(5) {
     @media only screen and (max-width: $m-screen) {
       visibility: visible;
+      margin-right: 0;
+      font-size: 1.5rem;
+      transform: translateY(1rem);
+      -webkit-transform: translateY(1rem);
+      -moz-transform: translateY(1rem);
+      -ms-transform: translateY(1rem);
+      -o-transform: translateY(1rem);
     }
   }
 }

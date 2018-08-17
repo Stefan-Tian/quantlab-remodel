@@ -14,6 +14,11 @@
       font-size: 3.8rem;
       margin-top: 3rem;
     }
+
+    @media only screen and (max-width: $xs-screen) {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
   }
 
   &__articles {
@@ -42,6 +47,10 @@
         margin: 3rem auto;
         padding: 2rem 4rem 4rem 4rem;
       }
+
+      @media only screen and (max-width: $xs-screen) {
+        width: 30rem;
+      }
     }
 
     & > div > svg {
@@ -59,12 +68,20 @@
       @media only screen and (max-width: $s-screen) {
         font-size: 3rem;
       }
+
+      @media only screen and (max-width: $xs-screen) {
+        font-size: 2rem;
+      }
     }
 
     & > div > span {
       @media only screen and (max-width: $s-screen) {
         font-size: 1.8rem;
         margin-top: 2rem;
+      }
+
+      @media only screen and (max-width: $xs-screen) {
+        font-size: 1.4rem;
       }
     }
   }

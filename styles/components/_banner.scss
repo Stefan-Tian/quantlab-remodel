@@ -10,6 +10,10 @@
     height: 85rem;
   }
 
+  @media only screen and (max-width: $s-screen) {
+    height: 62rem;
+  }
+
   &__text {
     //height: 15rem;
     margin: 0.01rem;
@@ -30,6 +34,11 @@
     @media only screen and (max-width: $s-screen) {
       font-size: 5rem;
       padding: 3.5rem 4rem;
+    }
+
+    @media only screen and (max-width: $xs-screen) {
+      font-size: 3.5rem;
+      padding: 3rem 3.2rem;
     }
   }
 

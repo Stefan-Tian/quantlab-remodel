@@ -67,6 +67,11 @@
       height: 15rem;
     }
 
+    @media only screen and (max-width: $xs-screen) {
+      width: 30rem;
+      overflow: scroll;
+    }
+
     & > div > span {
       font-weight: 600;
     }
@@ -100,6 +105,10 @@
       margin-bottom: 5rem;
       width: 45rem;
       height: 15rem;
+    }
+
+    @media only screen and (max-width: $xs-screen) {
+      width: 30rem;
     }
 
     & > div > span {
@@ -136,6 +145,10 @@
       margin-bottom: 5rem;
       width: 45rem;
       height: 15rem;
+    }
+
+    @media only screen and (max-width: $xs-screen) {
+      width: 30rem;
     }
 
     & > div > span {

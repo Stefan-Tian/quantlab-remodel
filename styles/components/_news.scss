@@ -24,6 +24,10 @@
       width: 200%;
     }
 
+    @media only screen and (max-width: $s-screen) {
+      width: 290%;
+    }
+
     & > div {
       display: flex;
       flex-direction: column;
@@ -37,6 +41,13 @@
 
       @media only screen and (max-width: $s-screen) {
         width: 60rem;
+        height: 40rem;
+        margin-right: 3rem;
+        min-width: 0;
+      }
+
+      @media only screen and (max-width: $xs-screen) {
+        width: 80rem;
         height: 40rem;
         margin-right: 3rem;
         min-width: 0;
