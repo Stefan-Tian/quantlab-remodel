@@ -70,6 +70,7 @@
       margin-bottom: 5rem;
       width: 45rem;
       height: 15rem;
+      box-shadow: 0rem 2rem 6rem 1.5rem rgba($color-blue, 0.7);
     }
 
     @media only screen and (max-width: $xs-screen) {
@@ -79,6 +80,10 @@
 
     & > div > span {
       font-weight: 600;
+    }
+
+    & > div {
+      z-index: 2;
     }
   }
 
@@ -110,6 +115,7 @@
       margin-bottom: 5rem;
       width: 45rem;
       height: 15rem;
+      box-shadow: 0rem 2rem 6rem 1.5rem rgba($color-blue, 0.7);
     }
 
     @media only screen and (max-width: $xs-screen) {
@@ -118,6 +124,10 @@
 
     & > div > span {
       font-weight: 600;
+    }
+
+    & > div {
+      z-index: 2;
     }
   }
 
@@ -150,6 +160,7 @@
       margin-bottom: 5rem;
       width: 45rem;
       height: 15rem;
+      box-shadow: 0rem 2rem 6rem 1.5rem rgba($color-blue, 0.7);
     }
 
     @media only screen and (max-width: $xs-screen) {
@@ -158,6 +169,10 @@
 
     & > div > span {
       font-weight: 600;
+    }
+
+    & > div {
+      z-index: 2;
     }
   }
 }
@@ -172,6 +187,6 @@
   }
 
   @media only screen and (max-width: $xs-screen) {
-    height: 150rem;
+    height: 145rem;
   }
 }
